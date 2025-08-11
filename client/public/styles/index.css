@@ -53,6 +53,9 @@ body {
     box-sizing: border-box;
     height: 100%;
 }
+main, header {
+    margin: 0 auto;
+}
 
 h1, h2, h3 {
     font-family: var(--font-heading);
