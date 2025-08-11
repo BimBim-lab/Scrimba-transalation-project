@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Translation Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+  </head>
+    <body>
+      <header class="header">
+        <img class="header-logo" src="./assets/parrot.png" alt="A colorful parrot" />
+        <div class="header-text">
+          <h1>PollyGlot</h1>
+          <p>Perfect Translation Every Time</p>
+        </div>
+      </header>
+      <main>
+        <section class="content">
+          <h2 id="text-to-translate">Text to translate 👇</h2>
+          <textarea class="textarea-to-translate" rows="4" placeholder="How are you?"></textarea>
+          <h2 id="select-language">Select language 👇</h2>
+            <div class="choose-language">
+              <label class="language-option">
+                <input type="radio" name="language" value="french" />
+                French
+                <img class="language-flag" src="./assets/fr-flag.png" alt="French flag" />
+              </label>
+              <label class="language-option">
+                <input type="radio" name="language" value="spanish" />
+                Spanish
+                <img class="language-flag" src="./assets/sp-flag.png" alt="Spanish flag" />
+              </label>
+              <label class="language-option">
+                <input type="radio" name="language" value="japanese" />
+                Japanese
+                <img class="language-flag" src="./assets/jpn-flag.png" alt="Japanese flag" />
+              </label>
+            </div>
+            <textarea class="textarea-after-translation hide" rows="4" placeholder="Translation will appear here..."></textarea>
+            <button class="translate-button" id="translate-button">Translate</button>
+            <button class="start-over-button hide" id="start-over-button">Start Over</button>
+            <button class="chat-mode-button hide" id="chat-mode-button">Chat Mode</button>
+        </section>
+        <section class="chat-content hide">
+          <div class="chat-output" id="chat-output">
+          </div>
+          <form id="chat-form" class="input-container" >
+            <textarea id="chat-input" class="chat-input" rows="1" placeholder="Type your message..."></textarea>
+            <button id="chat-submit" class="chat-submit" type="submit">
+              <i class="fa-regular fa-paper-plane"></i>
+            </button>
+          </form>
+          <div class="flag-selector">
+              <button class="flag-button" data-lang="fr">
+                <img class="language-flag-chat" src="./assets/fr-flag.png" alt="French flag" />
+              </button>
+              <button class="flag-button" data-lang="es">
+                <img class="language-flag-chat" src="./assets/sp-flag.png" alt="Spanish flag" />
+              </button>
+              <button class="flag-button" data-lang="jp">
+                <img class="language-flag-chat" src="./assets/jpn-flag.png" alt="Japanese flag" />
+              </button>
+          </div>
+        </section>
+      </main>
+        <script src="./js/index.js" type="module" defer></script>
+    </body>
+</html>
