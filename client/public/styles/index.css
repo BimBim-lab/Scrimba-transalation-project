@@ -268,7 +268,7 @@ textarea{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 12px 12px 0 0;
+    margin-right: calc(var(--space-sm) * 0.5);
   font-size: calc(var(--fz-lg)*1.5);
   color: var(--color-text);
   color: var(--color-brand);
