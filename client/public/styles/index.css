@@ -199,11 +199,8 @@ textarea{
 
 .flag-selector {
     /* buat flag ada di atas border bawah */
-    position: absolute;
-    bottom: 3%;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
+    margin-top: var(--space-md);
     justify-content: center;
     gap: calc(var(--space-md) * 1.75);
 }
@@ -234,14 +231,11 @@ textarea{
 .input-container {
   display: flex;
   flex-direction: row;
-  width: 90%;
-  align-items: center;
   justify-content: center;
-  height: calc(var(--space-lg) * 2.2);
-  position: absolute;
-  bottom: 20%;
-  left: 50%;
-  transform: translateX(-50%);
+  align-items: center;
+  margin-top: var(--space-md);
+  width: 100%;
+  height: calc(var(--space-lg) * 1.5);
   border: 2px solid #ccc;
   border-radius: 8px;
   resize: none; /* hilangkan drag resize */
@@ -252,10 +246,12 @@ textarea{
 
 .input-container textarea {
   flex: flex;
+  justify-content: center;
+  align-items: center;
   padding: var(--space-lg);
   outline: none;
   background: transparent;
-  font-size: calc(var(--fz-lg) * 1.2);
+  font-size: calc(var(--fz-lg) * 0.9);
   font-weight: bold;
   line-height: var(--lh-sm);
   max-height: fit-content;  
@@ -268,16 +264,19 @@ textarea{
 }
 
 .fa-paper-plane {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 12px 0 0;
   font-size: calc(var(--fz-lg)*1.5);
   color: var(--color-text);
-  margin-right: var(--space-sm);
   color: var(--color-brand);
-  padding: 0;
 }
 
 /* chat output styling */
 .chat-output {
-    height: 37vh;
+    height: 43vh;
     overflow-y: auto;
     border: 1px solid var(--color-outside-content);
     border-radius: 12px;
