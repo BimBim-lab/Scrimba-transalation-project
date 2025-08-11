@@ -36,7 +36,7 @@
     --space-lg: calc(var(--space-unit) * 2.5); /* large spacing */
     --space-xl: calc(var(--space-unit) * 3); /* extra large spacing */
     /* layout */
-    --container-width: 500px;              /* max container width */
+    --container-width: 600px;              /* max container width */
 }
 
 /* 3) Base typography */
