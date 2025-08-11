@@ -1,4 +1,4 @@
 export const API_BASE =
-  ['localhost', '127.0.0.1'].includes(window.location.hostname)
+  (location.hostname === 'localhost' || location.hostname === '127.0.0.1')
     ? 'http://localhost:3000/api/v1'
-    : 'https://your-production-api.com/api/v1';
+    : '/api';

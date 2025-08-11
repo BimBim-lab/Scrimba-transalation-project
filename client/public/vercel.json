@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://scrimba-transalation-project-production.up.railway.app/api/v1/$1"
+    }
+  ]
+}
