@@ -89,18 +89,17 @@ h3 {
 }
 
 .header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    gap: calc(var(--space-md)*0.6);
-    flex-direction: row;
-    background: url("../assets/worldmap.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: var(--container-width);
-    height: 25vh;
+    width: 100%;                  /* << jangan fixed */
+  max-width: var(--container-width);
+  margin-inline: auto;          /* ini yang menengahkan blok .header */
+  display: flex;
+  align-items: center;
+  justify-content: center;      /* ini menengahkan isi di dalam header */
+  gap: calc(var(--space-md) * 0.6);
+  flex-direction: row;
+
+  background: url("../assets/worldmap.png") center / cover no-repeat;
+  height: 25vh;
 }
 
 .header-text{
@@ -206,7 +205,7 @@ textarea{
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
-    gap: calc(var(--space-md) * 2);
+    gap: calc(var(--space-md) * 1.75);
 }
 
 .flag-button {
@@ -221,7 +220,7 @@ textarea{
 }
 
 .language-flag-chat {
-    width: 75px;
+    width: 50px;
     border: 1px solid var(--color-text);
 }
 
